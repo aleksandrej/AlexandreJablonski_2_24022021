@@ -15,41 +15,86 @@
     <!-- HEADER -->
     <header class="header">
 
-        <img src="ressources/images/logo/Reservia.svg" alt="logo Reservia">
+        <img class="logo" src="ressources/images/logo/Reservia.svg" alt="logo Reservia">
+
         <nav class="navbar">
             <a href="#hosting" class="sections">Hébergements</a>
             <a href="#activity" class="sections">Activités</a>
-            <a href="inscription">S'inscrire</a>
+            <a href="#inscription" class="sections">S'inscrire</a>
         </nav>
+
     </header>
+    <main>
+        <!-- SEARCH -->
+        <section class="search">
+            <div class="searchTitle">
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine ville</p>
+            </div>
+            <form action="bdd.php" method="get" class="searchForm">
+                <span><img src="" alt="">IMG</span>
+                <input type="text" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher">
+            </form>
+            <div class="searchFilters">
+                <div>
+                    <h2>Filtres</h2>
+                </div>
+                <div class="searchFilters">Économique</div>
+                <div class="searchFilters">Familial</div>
+                <div class="searchFilters">Romantique</div>
+                <div class="searchFilters">Animaux autorisés</div>
+            </div>
 
-    <!-- SEARCH -->
-    <section class="search">
-        <div class="searchTitle">
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine ville</p>
-        </div>
-        <form action="bdd.php" method="get" class="searchForm">
-            <span><img src="" alt="">IMG</span>
-            <input type="text" placeholder="Marseille, France">
-            <input type="submit" value="Rechercher">
-        </form>
-        <div class="searchFilters">
-            <div> <h2>Filtres</h2></div>
-            <div class="searchFilters">Économique</div>
-            <div class="searchFilters">Familial</div>
-            <div class="searchFilters">Romantique</div>
-            <div class="searchFilters">Animaux autorisés</div>
-        </div>
+        </section>
 
-    </section>
+        <!-- HOSTING -->
 
-    <!-- HOSTING -->
+        <section class="hosting">
+            <h2>Hébergements à Marseille</h2>
+            <div class="containerBasics">
+                <div class="hostingHotelsBasics">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelsBasics">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelsBasics">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelsBasics">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelsBasics">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelsBasics">Lorem ipsum dolor sit.</div>
+            </div>
+            <div class="containerPopulars">
+                <div class="hostingHotelsPopulars">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelPopulars">Lorem ipsum dolor sit.</div>
+                <div class="hostingHotelPopulars">Lorem ipsum dolor sit.</div>
+            </div>
+        </section>
 
-    <!-- ACTVITY -->
+        
+        <!-- ACTVITY -->
+        <section class="activity">
+            <div class="containerActivity">
+                <div class="activity">Vieux Port</div>
+                <div class="activity">Fort de Pomèrgues</div>
+                <div class="activity">Îles du Frioul</div>
+                <div class="activity">Parc National des Calanques</div>
+                <div class="activity">Notre-Dame-de-la-Garde</div>
+                <div class="activity">Parc Longchamps</div>
+            </div>
 
+
+
+        </section>
+    </main>
     <!-- FOOTER -->
-
+    <footer>
+        <div class="us">
+            <h3>À propos</h3>
+        </div>
+        <div class="hostingFooter">
+            <h3>Nos hébergements</h3>
+        </div>
+        <div class="assitance">
+            <h3>Assistance</h3>
+        </div>
+    </footer>
 </body>
 
 </html>
