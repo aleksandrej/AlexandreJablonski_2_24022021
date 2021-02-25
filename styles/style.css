@@ -19,7 +19,7 @@ a {
 
 .header {
     display: flex;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px 0px 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -37,6 +37,7 @@ header a:hover {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: #0065FC;
 }
 
 /* SEARCH */
