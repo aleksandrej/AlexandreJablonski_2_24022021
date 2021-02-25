@@ -13,8 +13,36 @@
 
 <body>
     <!-- HEADER -->
+    <header class="header">
+
+        <img src="ressources/images/logo/Reservia.svg" alt="logo Reservia">
+        <nav class="navbar">
+            <a href="#hosting" class="sections">Hébergements</a>
+            <a href="#activity" class="sections">Activités</a>
+            <a href="inscription">S'inscrire</a>
+        </nav>
+    </header>
 
     <!-- SEARCH -->
+    <section class="search">
+        <div class="searchTitle">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine ville</p>
+        </div>
+        <form action="bdd.php" method="get" class="searchForm">
+            <span><img src="" alt="">IMG</span>
+            <input type="text" placeholder="Marseille, France">
+            <input type="submit" value="Rechercher">
+        </form>
+        <div class="searchFilters">
+            <div> <h2>Filtres</h2></div>
+            <div class="searchFilters">Économique</div>
+            <div class="searchFilters">Familial</div>
+            <div class="searchFilters">Romantique</div>
+            <div class="searchFilters">Animaux autorisés</div>
+        </div>
+
+    </section>
 
     <!-- HOSTING -->
 
