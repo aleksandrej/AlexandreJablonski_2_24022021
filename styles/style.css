@@ -3,13 +3,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.hosting, footer {
-    background-color: #F2F2F2;
-}
+/* MAIN */
 
-/* i {
-    background: #F2F2F2;
-} */
+.containerPrincpal {
+    max-width: 1400px;
+    margin: auto;
+    /* margin-top: 30px; */
+    padding: 0px 30px 0px 30px;
+}
 
 /* HEADER */
 
@@ -36,15 +37,6 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
-}
-
-/* MAIN */
-
-main {
-    max-width: 1400px;
-    margin: auto;
-    /* margin-top: 30px; */
-    padding: 0px 30px 0px 30px;
 }
 
 /* SEARCH */
@@ -152,73 +144,26 @@ main {
 
 /* HOSTING */
 
-.containerHosting {
-    display: flex;
-    justify-content: space-between;
+.hostingGeneral {
     width: 100%;
-    height: auto;
-}
-
-.hostingBasics {
     display: flex;
     flex-wrap: wrap;
-    /* width: 66%; */
-    justify-content: space-around;
-    align-items: center;
 }
 
-.hostingBasics h2 {
-    /* display: inline; */
-}
+/* HOSTING PRINCIPAL & POPULAR */
 
-.hostingPopulars {
-    width: 33%;
-}
-
-.hostingBasics, .hostingPopulars {
+.containerHostingPrincipal, .containderHostingPopular {
     background-color: #F2F2F2;
-    padding-left: 1em;
-    border-radius: 25px;
-    margin: 1em 0em 1em 0em;
+    border-radius: 20px;
 }
 
-.hostingPopulars {
-    margin-left: 2em;
-}
-
-/* CARDS */
-
-.hostelsCard {
-    /* height: auto; */
-    width: 20em;
-    background-color: white;
-    padding: 0.5em;
-    margin: 2em 1em 2em 1em;
-    border-radius: 25px;
-    align-items: center;
-}
-
-.hostelsCard img {
-    width: 100%;
-    height: 150px;
-    border-radius: 25px 25px 0px 0px;
-}
-
-.titleCard {
-    /* text-align: ; */
+.containerHostingPrincipal h2, .containderHostingPopular h2 {
+    margin-left: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
-    font-size: 1.2em;
-    margin: 0.8em 0em 0em 0em;
 }
 
-.priceCard {
-    margin: 0.4em 0em 0em 0em;
-}
-
-.hostelsCard .notation {
-    display: flex;
-    margin: 0em 0em 0em 0em;
-}
+/* CARDS GENERAL */
 
 .starsTrue {
     color: #0065FC;
@@ -228,15 +173,79 @@ main {
     color: #F2F2F2;
 }
 
-/* ACTIVITY */
+/* HOSTING PRINCIPAL */
 
-.containerActivity {
-    background-color: #F2F2F2;
+.containerHostingPrincipal {
+    /* display: flex; */
+    width: 66%;
+    height: auto;
 }
 
-/* FOOTER */
-
-footer {
-    padding: 30px;
-    margin-top: 30px;
+.containerCardHostingPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
 }
+
+/* CARDS HOTING PINCIPAL */
+
+.cardsHostingPrincipal {
+    height: auto;
+    border-radius: 20px;
+}
+
+.cardsHostingPrincipal img {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    /* width: 100%;
+    height: 150px;
+    object-fit:fill ; */
+    /* position: relative; */
+}
+
+.cardsHostingPrincipal {
+    background-color: white;
+    width: 27%;
+    /* height: auto; */
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 19px #bababa;
+}
+
+.titleCardsHostingPrincipal {
+    margin: 0px 0px 0px 5px;
+    font-weight: bold;
+}
+
+.priceCardsHostingPrincipal {
+    margin: 5px 0px 0px 5px;
+}
+
+.notationCardsHostingPrincipal {
+    display: flex;
+    margin: 0;
+}
+
+/* HOSTING POPULAR */
+
+.containderHostingPopular {
+    width: 400px;
+    margin-left: 20px;
+}
+
+.containerCardHostingPopular {
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardsHostingPopular {
+    width: 100%;
+}
+
+/* HOTING PRINCIPAL CARDS */
