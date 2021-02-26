@@ -11,7 +11,6 @@ body {
     background: #F2F2F2;
 } */
 
-
 /* HEADER */
 
 .header {
@@ -155,36 +154,79 @@ main {
 
 .containerHosting {
     display: flex;
-    background-color: lightcoral;
     justify-content: space-between;
     width: 100%;
-    height: 400px;
+    height: auto;
 }
 
 .hostingBasics {
-    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 66%; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hostingBasics h2 {
+    /* display: inline; */
 }
 
 .hostingPopulars {
     width: 33%;
 }
 
-.hostingBasics, .hostingPopulars {  
+.hostingBasics, .hostingPopulars {
     background-color: #F2F2F2;
     padding-left: 1em;
     border-radius: 25px;
     margin: 1em 0em 1em 0em;
-    
 }
 
 .hostingPopulars {
     margin-left: 2em;
-
 }
 
+/* CARDS */
 
+.hostelsCard {
+    /* height: auto; */
+    width: 20em;
+    background-color: white;
+    padding: 0.5em;
+    margin: 2em 1em 2em 1em;
+    border-radius: 25px;
+    align-items: center;
+}
 
+.hostelsCard img {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px 25px 0px 0px;
+}
 
+.titleCard {
+    /* text-align: ; */
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.8em 0em 0em 0em;
+}
+
+.priceCard {
+    margin: 0.4em 0em 0em 0em;
+}
+
+.hostelsCard .notation {
+    display: flex;
+    margin: 0em 0em 0em 0em;
+}
+
+.starsTrue {
+    color: #0065FC;
+}
+
+.starsFalse {
+    color: #F2F2F2;
+}
 
 /* ACTIVITY */
 
