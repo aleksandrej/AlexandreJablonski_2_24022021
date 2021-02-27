@@ -3,6 +3,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* MAIN */
 
 .containerPrincpal {
@@ -14,7 +18,7 @@ body {
 
 /* HEADER */
 
-.header {
+.header { 
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -33,7 +37,7 @@ header a:hover {
     padding-top: 30px;
 }
 
-a {
+.header a {
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
@@ -84,6 +88,8 @@ a {
     border-radius: 0px 20px 20px 0px;
     padding: 1em 1.4em;
     background-color: #0065FC;
+    color: white;
+    cursor: pointer;
 }
 
 .searchButton a {
@@ -95,9 +101,12 @@ a {
 
 .searchFiltersContainer {
     display: flex;
+    font-weight: bold;
     margin: 2em 0em 2em 0em;
     height: 2.5em;
     align-items: center;
+    justify-content: flex-start;
+
 }
 
 .searchFilterTitle {
@@ -112,6 +121,10 @@ a {
     border-right: 2px solid#ddd;
 }
 
+.searchFilters a {
+    color: black;
+}
+
 .searchFilters i {
     background-color: #DEEBFF;
     color: #0065FC;
@@ -121,18 +134,34 @@ a {
     border-radius: 50%;
 }
 
-.searchFilters span {
-    /* text-align: center; */
-    margin-left: 20px;
+.searchFilters {
+    display: inline-block;
+    /* width: auto; */
+    /* padding: 0 25px; */
+    padding: 0;
+    height: 50px;
     font-size: 1em;
-    /* border-radius: 0px 20px 20px 0px;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
-    border-right: 2px solid#ddd; */
-    padding: 0.7em 0.9em 0.7em 0em;
-}
+    line-height: 50px;
+    border: 2px solid #bababa;
+    border-radius: 25px;
+    background-color: white;
+  }
 
-.informations i {
+  .searchFilters i {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 1.2em 1.2em;
+    border-radius: 50%;
+    /* text-align: left; */
+    border-radius: 50%;
+  }
+
+  .searchFilters span {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+  }
+
+  .informations i {
     background-color: white;
     color: #0065FC;
     padding: 0.5em 0.8em;
@@ -140,8 +169,8 @@ a {
     border: 2px solid#ddd;
     border-radius: 50%;
     margin-right: 0.8em;
-}
 
+  }
 /* HOSTING */
 
 .hostingGeneral {
@@ -185,8 +214,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: stretch;
+    gap: 10px 10px;
 }
+
+
 
 /* CARDS HOTING PINCIPAL */
 
@@ -202,10 +234,6 @@ a {
     width: 100%;
     max-height: 100%;
     border-radius: 20px 20px 0px 0px;
-    /* width: 100%;
-    height: 150px;
-    object-fit:fill ; */
-    /* position: relative; */
 }
 
 .cardsHostingPrincipal {
@@ -231,21 +259,162 @@ a {
     margin: 0;
 }
 
+.next a {
+    margin-left: 2em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
 /* HOSTING POPULAR */
 
 .containderHostingPopular {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     margin-left: 20px;
 }
 
 .containerCardHostingPopular {
-    background-color: lightcoral;
+    height: 8rem;
+    width: auto;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding: 5px;
+    box-shadow: 5px 5px 19px #bababa;
 }
+
+.titleHostingPopular {
+display: flex;
+font-size: 1em;
+margin: 0;
+justify-content: space-between; 
+align-items: center;   
+}
+
+.titleHostingPopular i {
+    margin-right: 2em;
+    margin-top: 0.5em;
+    font-size: 1.4em;
+    /* align-items: center; */
+}
+
+.containerCardHostingPopular {
+    background-color: white;
+    border-radius: 20px;
+    height: auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    margin: auto 1em auto 1em;
+}
+
+
+
+/* CARDS HOTING POPULAR */
 
 .cardsHostingPopular {
     width: 100%;
+    /* margin: 20px; */
 }
 
-/* HOTING PRINCIPAL CARDS */
+.cardsHostingPopular img {
+    float: left;
+    border-radius: 20px 0px 0px 20px;
+    width: 9rem;
+    height: 9rem;
+    /* overflow:initial; */
+}
+
+.titleCardsHostingPopular {
+    margin-top: 0;
+    margin-left: 0.8em;
+    font-weight: bold;
+}
+
+.priceCardsHostingPopular {
+    margin-top: 0.4em;
+    margin-left: 0.8em;
+    display: inline-block; 
+}
+
+.notationCardsHostingPopular {
+    /* display: flex; */
+    display: inline-block;
+    /* align-content: flex-end; */
+    margin-left: 0.8em ;
+    margin-top: 1.7em;
+    /* align-items: flex-end; */
+    
+}
+
+/* ACTIVITY */
+
+.containerCardActivity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch; */
+    /* justify-content: stretch;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    max-width: 1400px; */
+    
+
+}
+
+.cardActivity {
+    background-color: salmon;
+    margin: 2em;
+    /* width: 25%; */
+    overflow: hidden;
+
+}
+
+.cardActivity img {
+    width: auto;
+    height: auto;
+    
+}
+
+/* .cardActivity:nth-child(1) {
+    flex: 2;
+}
+.cardActivity:nth-child(2) {
+    flex: 1;
+}
+.cardActivity:nth-child(3) {
+    flex: 1;
+}
+.cardActivity:nth-child(4) {
+    flex: 2;
+}
+.cardActivity:nth-child(5) {
+    flex: 1;
+}
+.cardActivity:nth-child(6) {
+    flex: 1;
+} */
+
+
+
+
+
+
+
+
+
+
+/* SAVE */
+
+/* 
+.searchFilters span {
+    margin-left: 20px;
+    font-size: 1em;
+    padding: 0.7em 0.9em 0.7em 0em;
+}
+
+
+} */
