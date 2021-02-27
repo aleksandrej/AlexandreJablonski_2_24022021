@@ -7,6 +7,18 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
 /* MAIN */
 
 .containerPrincpal {
@@ -18,7 +30,7 @@ a {
 
 /* HEADER */
 
-.header { 
+.header {
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -106,7 +118,6 @@ header a:hover {
     height: 2.5em;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .searchFilterTitle {
@@ -145,23 +156,23 @@ header a:hover {
     border: 2px solid #bababa;
     border-radius: 25px;
     background-color: white;
-  }
+}
 
-  .searchFilters i {
+.searchFilters i {
     background-color: #DEEBFF;
     color: #0065FC;
     padding: 1.2em 1.2em;
     border-radius: 50%;
     /* text-align: left; */
     border-radius: 50%;
-  }
+}
 
-  .searchFilters span {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-  }
+.searchFilters span {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
 
-  .informations i {
+.informations i {
     background-color: white;
     color: #0065FC;
     padding: 0.5em 0.8em;
@@ -169,8 +180,8 @@ header a:hover {
     border: 2px solid#ddd;
     border-radius: 50%;
     margin-right: 0.8em;
+}
 
-  }
 /* HOSTING */
 
 .hostingGeneral {
@@ -184,6 +195,7 @@ header a:hover {
 .containerHostingPrincipal, .containderHostingPopular {
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .containerHostingPrincipal h2, .containderHostingPopular h2 {
@@ -206,7 +218,7 @@ header a:hover {
 
 .containerHostingPrincipal {
     /* display: flex; */
-    width: 66%;
+    width: 60%;
     height: auto;
 }
 
@@ -215,10 +227,8 @@ header a:hover {
     flex-wrap: wrap;
     width: 100%;
     justify-content: stretch;
-    gap: 10px 10px;
+    /* gap: 5px 5px; */
 }
-
-
 
 /* CARDS HOTING PINCIPAL */
 
@@ -228,7 +238,7 @@ header a:hover {
 }
 
 .cardsHostingPrincipal img {
-    height: 7rem;
+    height: 8rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
@@ -286,11 +296,11 @@ header a:hover {
 }
 
 .titleHostingPopular {
-display: flex;
-font-size: 1em;
-margin: 0;
-justify-content: space-between; 
-align-items: center;   
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .titleHostingPopular i {
@@ -309,8 +319,6 @@ align-items: center;
     margin: auto 1em auto 1em;
 }
 
-
-
 /* CARDS HOTING POPULAR */
 
 .cardsHostingPopular {
@@ -323,7 +331,7 @@ align-items: center;
     border-radius: 20px 0px 0px 20px;
     width: 9rem;
     height: 9rem;
-    /* overflow:initial; */
+    object-fit: cover;
 }
 
 .titleCardsHostingPopular {
@@ -335,34 +343,39 @@ align-items: center;
 .priceCardsHostingPopular {
     margin-top: 0.4em;
     margin-left: 0.8em;
-    display: inline-block; 
+    display: inline-block;
 }
 
 .notationCardsHostingPopular {
     /* display: flex; */
     display: inline-block;
     /* align-content: flex-end; */
-    margin-left: 0.8em ;
+    margin-left: 0.8em;
     margin-top: 1.7em;
     /* align-items: flex-end; */
-    
 }
 
 /* ACTIVITY */
 
+.containerActivity {
+    
+}
+
+.containerActivity h2 {
+
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
 .containerCardActivity {
+    background-color:lightsteelblue ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch; */
-    /* justify-content: stretch;
-    /* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    max-width: 1400px; */
+    align-content: stretch;
     
-
 }
 
 .cardActivity {
@@ -370,51 +383,35 @@ align-items: center;
     margin: 2em;
     /* width: 25%; */
     overflow: hidden;
-
 }
 
 .cardActivity img {
     width: auto;
     height: auto;
-    
 }
 
-/* .cardActivity:nth-child(1) {
-    flex: 2;
-}
-.cardActivity:nth-child(2) {
-    flex: 1;
-}
-.cardActivity:nth-child(3) {
-    flex: 1;
-}
-.cardActivity:nth-child(4) {
-    flex: 2;
-}
-.cardActivity:nth-child(5) {
-    flex: 1;
-}
-.cardActivity:nth-child(6) {
-    flex: 1;
-} */
+/* FOOTER */
 
-
-
-
-
-
-
-
-
-
-/* SAVE */
-
-/* 
-.searchFilters span {
-    margin-left: 20px;
-    font-size: 1em;
-    padding: 0.7em 0.9em 0.7em 0em;
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
 }
 
+.footerBox {
+    display: flex;
+    max-width: 100%;
+    width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 
-} */
+.footerColumn {
+    width: 30%;
+    padding: 2rem 2rem;
+}
+
+.footerLink {
+    display: block;
+    margin: 1rem 0;
+}
