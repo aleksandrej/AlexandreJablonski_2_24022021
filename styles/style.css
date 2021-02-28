@@ -3,6 +3,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+body .containerPrincpal,.header, .footerBox {
+    max-width: 1440px;
+}
+
 a {
     text-decoration: none;
 }
@@ -13,17 +17,20 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 h3 {
     font-size: 1.2em;
 }
 
+
+
 /* MAIN */
 
 .containerPrincpal {
-    max-width: 1400px;
     margin: auto;
+    height: auto;
     /* margin-top: 30px; */
     padding: 0px 30px 0px 30px;
 }
@@ -31,7 +38,6 @@ h3 {
 /* HEADER */
 
 .header {
-    max-width: 1400px;
     margin: auto;
     display: flex;
     padding: 20px 30px 0px 30px;
@@ -112,64 +118,55 @@ header a:hover {
 /* SEARCH FILTERS */
 
 .searchFiltersContainer {
+    width: 70%;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     font-weight: bold;
-    margin: 2em 0em 2em 0em;
-    height: 2.5em;
-    align-items: center;
-    justify-content: flex-start;
+    margin-top: 2em;
 }
 
 .searchFilterTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.searchFilters {
     display: flex;
+    border: #f2f2f2 solid 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0.4em;
+    transition: 0.3s;
 }
 
-.searchFilters {
-    margin: 0em 1.2em 0em 1.2em;
-    border-radius: 0px 30px 30px 0px;
-    border-top: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
-    border-right: 2px solid#ddd;
-}
-
-.searchFilters a {
-    color: black;
+.searchFilters:hover {
+    transform: scale(1.1);
 }
 
 .searchFilters i {
-    background-color: #DEEBFF;
+    display: flex;
+    width: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 43px;
     color: #0065FC;
-    padding: 1em 1em;
-    border-radius: 20px 0px 0px 20px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.searchFilters {
-    display: inline-block;
-    /* width: auto; */
-    /* padding: 0 25px; */
-    padding: 0;
-    height: 50px;
-    font-size: 1em;
-    line-height: 50px;
-    border: 2px solid #bababa;
-    border-radius: 25px;
-    background-color: white;
-}
-
-.searchFilters i {
     background-color: #DEEBFF;
-    color: #0065FC;
-    padding: 1.2em 1.2em;
-    border-radius: 50%;
-    /* text-align: left; */
-    border-radius: 50%;
 }
 
-.searchFilters span {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+.searchFiltersTopics {
+    /* margin: 0.3750em; */
+    margin-top: 0.3750em;
+    margin-bottom: 0.3750em;
+    margin-right: 0.3750em;
+    margin-left: 0.3750em;
+    height: 40px;
+    display: flex;
+    padding-right: 1em;
+    /* padding-left: 1em; */
+    /* text-align: center; */
+    align-items: center;
 }
 
 .informations i {
@@ -180,6 +177,7 @@ header a:hover {
     border: 2px solid#ddd;
     border-radius: 50%;
     margin-right: 0.8em;
+    margin-left: 0.8em;
 }
 
 /* HOSTING */
@@ -187,6 +185,7 @@ header a:hover {
 .hostingGeneral {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -201,7 +200,6 @@ header a:hover {
 .containerHostingPrincipal h2, .containderHostingPopular h2 {
     margin-left: 20px;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
 /* CARDS GENERAL */
@@ -212,6 +210,17 @@ header a:hover {
 
 .starsFalse {
     color: #F2F2F2;
+}
+
+/* HOVER CARDS GENERAL */
+
+.cardsHostingPrincipal:hover, .containerCardHostingPopular:hover, .cardsHostingPrincipal:hover, .containerCardHostingPopular:hover, .cardActivity1:hover, .cardActivity2and3:hover, .cardActivity4:hover, .cardActivity5and6:hover {
+    transform: scale(1.05);
+}
+
+.cardsHostingPrincipal, .containerCardHostingPopular, .cardActivity1, .cardActivity2and3, .cardActivity4, .cardActivity5and6  {
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 /* HOSTING PRINCIPAL */
@@ -230,11 +239,12 @@ header a:hover {
     /* gap: 5px 5px; */
 }
 
-/* CARDS HOTING PINCIPAL */
+/* CARDS HOSTING PINCIPAL */
 
 .cardsHostingPrincipal {
     height: auto;
     border-radius: 20px;
+    transition: 0.3s;
 }
 
 .cardsHostingPrincipal img {
@@ -281,7 +291,7 @@ header a:hover {
 .containderHostingPopular {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 430px;
     margin-left: 20px;
 }
 
@@ -357,37 +367,64 @@ header a:hover {
 
 /* ACTIVITY */
 
-.containerActivity {
-    
+.containerActivityGeneral {
+    width: 100%;
+    margin: 4em 0em 4em 0em;
 }
 
-.containerActivity h2 {
+.containerActivityGeneral h2 {
+    margin-bottom: 0.3em;
+}
 
-    margin-left: 20px;
-    margin-bottom: 10px;
-    font-weight: bold;
-
+.containerActivity {
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
 }
 
 .containerCardActivity {
-    background-color:lightsteelblue ;
+    width: 100%;
+    /* height: 225px; */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    
+    justify-content: space-between;
 }
 
-.cardActivity {
-    background-color: salmon;
-    margin: 2em;
-    /* width: 25%; */
-    overflow: hidden;
+.cardActivity1 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 19px #bababa;
+
+    /* text-align: center; */
 }
 
-.cardActivity img {
-    width: auto;
-    height: auto;
+.cardActivity1 img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardActivity2and3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardActivity1, .cardActivity2and3, .cardActivity4, .cardActivity5and6 {
+    margin: 1em;
+    width: 25%;
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: lightsteelblue;
+}
+
+.cardActivity1 {
+    margin-left: 0em;
+}
+
+.cardActivity5and6 {
+    margin-right: 0em;
 }
 
 /* FOOTER */
@@ -399,19 +436,19 @@ footer {
 
 .footerBox {
     display: flex;
-    max-width: 100%;
-    width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     box-sizing: border-box;
 }
 
 .footerColumn {
     width: 30%;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 2rem 0rem;
 }
 
 .footerLink {
     display: block;
     margin: 1rem 0;
+    color: black;
 }
