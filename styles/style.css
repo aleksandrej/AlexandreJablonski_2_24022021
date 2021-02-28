@@ -3,8 +3,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-body .containerPrincpal,.header, .footerBox {
-    max-width: 1440px;
+body .containerPrincpal, .header, .footerBox {
+    max-width: 1290px;
 }
 
 a {
@@ -21,10 +21,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: bold;
 }
-
-
 
 /* MAIN */
 
@@ -185,8 +184,8 @@ header a:hover {
 .hostingGeneral {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    flex-wrap: none;
 }
 
 /* HOSTING PRINCIPAL & POPULAR */
@@ -216,9 +215,12 @@ header a:hover {
 
 .cardsHostingPrincipal:hover, .containerCardHostingPopular:hover, .cardsHostingPrincipal:hover, .containerCardHostingPopular:hover, .cardActivity1:hover, .cardActivity2and3:hover, .cardActivity4:hover, .cardActivity5and6:hover {
     transform: scale(1.05);
+    box-shadow: 5px 5px 19px #DEEBFF;
+
+
 }
 
-.cardsHostingPrincipal, .containerCardHostingPopular, .cardActivity1, .cardActivity2and3, .cardActivity4, .cardActivity5and6  {
+.cardsHostingPrincipal, .containerCardHostingPopular, .cardActivity1, .cardActivity2and3, .cardActivity4, .cardActivity5and6 {
     transition: 0.3s;
     cursor: pointer;
 }
@@ -227,7 +229,7 @@ header a:hover {
 
 .containerHostingPrincipal {
     /* display: flex; */
-    width: 60%;
+    width: 66%;
     height: auto;
 }
 
@@ -242,13 +244,14 @@ header a:hover {
 /* CARDS HOSTING PINCIPAL */
 
 .cardsHostingPrincipal {
+    width: 25%;
     height: auto;
     border-radius: 20px;
     transition: 0.3s;
 }
 
 .cardsHostingPrincipal img {
-    height: 8rem;
+    height: 6rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
@@ -266,17 +269,19 @@ header a:hover {
 }
 
 .titleCardsHostingPrincipal {
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 5px 5px;
     font-weight: bold;
 }
 
 .priceCardsHostingPrincipal {
-    margin: 5px 0px 0px 5px;
+    margin: 0px 0px -10px 5px;
 }
 
 .notationCardsHostingPrincipal {
     display: flex;
-    margin: 0;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin: 0px 0px -13px 5px;
 }
 
 .next a {
@@ -304,17 +309,21 @@ header a:hover {
     padding: 5px;
     box-shadow: 5px 5px 19px #bababa;
 }
+.presentationCardsHostingPopular h3 {
+    margin-bottom: 0.1em;
+    margin-right: 0.2em;
+
+}
 
 .titleHostingPopular {
     display: flex;
-    font-size: 1em;
-    margin: 0;
-    justify-content: space-between;
     align-items: center;
+    /* justify-content: stretch; */
 }
 
 .titleHostingPopular i {
     margin-right: 2em;
+    margin-left: auto;
     margin-top: 0.5em;
     font-size: 1.4em;
     /* align-items: center; */
@@ -324,16 +333,26 @@ header a:hover {
     background-color: white;
     border-radius: 20px;
     height: auto;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    /* display: flex;
+    flex-wrap: wrap; */
     margin: auto 1em auto 1em;
 }
 
 /* CARDS HOTING POPULAR */
 
+.containerCardHostingPopular {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cardsHostingPopular {
-    width: 100%;
-    /* margin: 20px; */
+    display: flex;
+    width: auto;
+}
+
+.imgCardsHostingPopular {
+    float: left;
+    object-fit: cover;
 }
 
 .cardsHostingPopular img {
@@ -344,26 +363,29 @@ header a:hover {
     object-fit: cover;
 }
 
-.titleCardsHostingPopular {
-    margin-top: 0;
+.presentationCardsHostingPopular {
+    display: flex;
+    flex-direction: column;
     margin-left: 0.8em;
+}
+
+.titleCardsHostingPopular {
+    margin-top: 1em;
+    /* margin-left: 0.8em; */
     font-weight: bold;
 }
 
 .priceCardsHostingPopular {
     margin-top: 0.4em;
-    margin-left: 0.8em;
-    display: inline-block;
+    /* margin-left: 0.8em; */
 }
 
 .notationCardsHostingPopular {
-    /* display: flex; */
-    display: inline-block;
+    margin-top: auto;
+    margin-bottom: 10px;
     /* align-content: flex-end; */
-    margin-left: 0.8em;
-    margin-top: 1.7em;
-    /* align-items: flex-end; */
 }
+
 
 /* ACTIVITY */
 
@@ -394,7 +416,6 @@ header a:hover {
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 19px #bababa;
-
     /* text-align: center; */
 }
 
@@ -451,4 +472,8 @@ footer {
     display: block;
     margin: 1rem 0;
     color: black;
+}
+
+.footerLink:hover {
+    color: #0065FC;
 }
