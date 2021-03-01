@@ -30,7 +30,6 @@ h3 {
 .containerPrincpal {
     margin: auto;
     height: auto;
-    /* margin-top: 30px; */
     padding: 0px 30px 0px 30px;
 }
 
@@ -174,7 +173,6 @@ header a:hover {
 .hostingGeneral {
     width: 100%;
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: none;
 }
 
@@ -216,7 +214,6 @@ header a:hover {
 /* HOSTING PRINCIPAL */
 
 .containerHostingPrincipal {
-    /* display: flex; */
     width: 66%;
     height: auto;
 }
@@ -226,7 +223,6 @@ header a:hover {
     flex-wrap: wrap;
     width: 100%;
     justify-content: stretch;
-    /* gap: 5px 5px; */
 }
 
 /* CARDS HOSTING PINCIPAL */
@@ -250,7 +246,6 @@ header a:hover {
 .cardsHostingPrincipal {
     background-color: white;
     width: 27%;
-    /* height: auto; */
     margin: 20px;
     padding: 5px;
     box-shadow: 5px 5px 19px #bababa;
@@ -320,8 +315,6 @@ header a:hover {
     background-color: white;
     border-radius: 20px;
     height: auto;
-    /* display: flex;
-    flex-wrap: wrap; */
     margin: auto 1em auto 1em;
 }
 
@@ -358,63 +351,55 @@ header a:hover {
 
 .titleCardsHostingPopular {
     margin-top: 1em;
-    /* margin-left: 0.8em; */
     font-weight: bold;
 }
 
 .priceCardsHostingPopular {
     margin-top: 0.4em;
-    /* margin-left: 0.8em; */
 }
 
 .notationCardsHostingPopular {
     margin-top: auto;
     margin-bottom: 10px;
-    /* align-content: flex-end; */
 }
 
 /* ACTIVITY */
 
 #activity {
-    margin: 4rem auto ;
+    margin: 4rem auto;
 }
 
 .containeractivity {
     width: 100%;
     height: 520px;
-    /* margin: 0em auto; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    /* background-color:grey; */
 }
 
-.containeractivity h4 {
+.containeractivity figcaption {
     font-size: 1.2em;
     margin: 1em;
     font-weight: bold;
     background-color: white;
-    
 }
 
 .containeractivity .cardActivityTypeOne {
-    /* background-color: green; */
     height: 100%;
-    width: 300px;
+    width: 290px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 5px 5px 19px #bababa;
     transition: 0.3s;
-    align-items:flex-start;
+    margin: 0;
 }
 
 .containeractivity .cardActivityTypeOne a, .cardActivityTypeTwo a, .cardActivityTypeThree a {
     width: 100%;
     height: 100%;
-    /* margin-top: 20px; */
 }
 
 .cardActivityTypeOne img {
@@ -425,50 +410,40 @@ header a:hover {
 }
 
 .containeractivity .cardActivityTypeTwo {
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-    height: 45%;
-    width: 300px;
+    margin: 0em;
+    height: 52%;
+    width: 290px;
     border-radius: 20px;
     box-shadow: 5px 5px 19px #bababa;
     transition: 0.3s;
-    
-
 }
 
 .cardActivityTypeTwo img {
-    height: 70%;
+    height: 75%;
     width: 100%;
-    /* margin-bottom: 0em; */
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .containeractivity .cardActivityTypeThree {
-    /* background-color: red; */
-    height: 48%;
-    width: 300px;
-    /* display: flex;
-    flex-direction: column; */
+    height: 40%;
+    width: 290px;
     border-radius: 20px;
-    /* margin-top: auto;
-    margin-bottom: auto; */
+    margin: 0em;
     box-shadow: 5px 5px 19px #bababa;
     transition: 0.3s;
-   
-
 }
 
 .cardActivityTypeThree img {
-    height: 74%;
+    height: 68%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .cardActivityTypeOne:hover, .cardActivityTypeTwo:hover, .cardActivityTypeThree:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 /* FOOTER */
@@ -480,9 +455,7 @@ footer {
 
 .footerBox {
     display: flex;
-    /* max-width: 1440px; */
     margin: auto;
-    /* padding: 0 2rem; */
     box-sizing: border-box;
 }
 
