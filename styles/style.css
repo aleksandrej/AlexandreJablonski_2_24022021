@@ -30,7 +30,7 @@ h3 {
 .containerPrincpal {
     margin: auto;
     height: auto;
-    padding: 0px 30px 0px 30px;
+    /* padding: 0px 30px 0px 30px; */
 }
 
 /* HEADER */
@@ -170,7 +170,7 @@ header a:hover {
 
 /* HOSTING */
 
-.hostingGeneral {
+#hosting {
     width: 100%;
     display: flex;
     flex-wrap: none;
@@ -472,4 +472,112 @@ footer {
 
 .footerLink:hover {
     color: #0065FC;
+}
+
+/* ~~~~~~~~~~~~~~ RESPONSIVE FOR iPHONE 8 ~~~~~~~~~~~~~~ */
+
+@media all and (min-width: 360px) and (max-width: 1280px) {
+    body .containerPrincpal, .header, .footerBox {
+        max-width: 1290px;
+        margin: 0px 20px 0px 20px;
+    }
+    /* .containerPrincpal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } */
+    .containerPrincpal .containerHostingPrincipal {
+        /* order: 1; */
+        width: auto;
+        padding: 0em;
+    }
+    /* RESPONSIVE HOSTING */
+    #hosting {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .containerPrincpal .containderHostingPopular {
+        width: auto;
+        display: flex;
+    }
+    .containerHostingPrincipal {
+        background-color: white;
+        /* margin: 1em 0em; */
+    }
+    /* RESPONSIVE HOSTING */
+    .containerCardHostingPrincipal {
+        width: 100%;
+        order: 2;
+        background-color: white;
+    }
+    .cardsHostingPrincipal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+    }
+    .cardsHostingPopular img, .cardsHostingPopular img {
+        height: 100%;
+        width: 100%;
+        /* object-fit: contain; */
+    }
+
+    .titleCardsHostingPrincipal {
+        margin: 10px 0px 5px 5px;
+    }
+    /* RESPONSIVE ACTIVITY */
+    .containeractivity {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1520px;
+        justify-content: space-between;
+    }
+    .containeractivity figcaption {
+        font-size: 0.9em;
+    }
+    .containeractivity .cardActivityTypeOne {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .containeractivity .cardActivityTypeTwo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .containeractivity .cardActivityTypeThree {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .containeractivity .cardActivityTypeOne a, .cardActivityTypeTwo a, .cardActivityTypeThree a {
+        width: 100%;
+        height: auto;
+    }
+    .cardActivityTypeOne img, .cardActivityTypeTwo img, .cardActivityTypeThree img {
+        height: 150px;
+        width: 100%;
+    }
+    /* RESPONSIVE FOOTER */
+    .footerBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: start; */
+        /* font-size: 1.2em; */
+    }
+    .footerColumn {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
 }
