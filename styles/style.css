@@ -177,7 +177,7 @@ header a:hover {
     /* align-items: center; */
     border: 2px solid#ddd;
     border-radius: 50%;
-    margin-top:5px ;
+    margin-top: 5px;
     margin-right: 0.8em;
     /* margin-left: 0.8em; */
     height: 50%;
@@ -551,7 +551,6 @@ footer {
         cursor: pointer;
     }
     /* RESPONSIVE SEARCH BUTTON */
-
     .searchFiltersContainer {
         width: 100%;
         height: auto;
@@ -562,30 +561,35 @@ footer {
         padding: 0;
         margin: 0;
     }
-
     .searchFilterTitle {
         width: 100%;
         margin-bottom: -15px;
     }
-
     .searchFilters {
         margin: 8px 0px;
         width: auto;
-        
     }
-
     .searchFiltersTopics {
         width: auto;
         padding-right: 10px;
     }
-    
-
     .informations {
         width: 100%;
-        font-size:15px ;
+        font-size: 15px;
+    }
+    .informations i {
+        padding: 5px 10px;
+        margin-top: 15px;
+    }
+    /* RESPONSIVE CONTAINER HOSTING */
+    .containerHostingPrincipal h2, .containerHostingPopular h2 {
+        padding: 0px;
     }
 
-
+    .containerHostingPrincipal h2, .containerHostingPopular h2 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
     /* RESPONSIVE HOSTING PRINCIPAL */
     #hosting {
         display: flex;
@@ -624,9 +628,6 @@ footer {
         display: flex;
         margin: 0;
     }
-    .titleHostingPrincipal, .titleHostingPopular {
-        margin: 0;
-    }
     .cardsHostingPopular img, {
         height: 100%;
         width: 33%;
@@ -640,7 +641,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 1520px;
+        height: 1380px;
         justify-content: space-between;
     }
     .containeractivity figcaption {
