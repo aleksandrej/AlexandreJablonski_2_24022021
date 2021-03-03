@@ -168,6 +168,7 @@ header a:hover {
 .informations {
     display: flex;
     margin: 16px 0px;
+    align-items: center;
 }
 
 .informations i {
@@ -489,15 +490,56 @@ footer {
     color: #0065FC;
 }
 
-/* ~~~~~~~~~~~~~~ RESPONSIVE FOR iPHONE 8 ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~ RESPONSIVE FOR Tab ~~~~~~~~~~~~~~ */
 
-@media all and (min-width: 360px) and (max-width: 1280px) {
+@media all and (min-width:768px) and (max-width:1024px) {
     body .containerPrincpal, .header, .footerBox {
-        max-width: 1290px;
+        max-width: 1024px;
         margin: 0px 20px 0px 20px;
     }
-    h1 {
-        font-size: 1.4em;
+    /*  RESPONSIVE HEADER */
+    .header {
+        padding: 20px 0px;
+    }
+    .sections {
+        display: none;
+    }
+    .inscription {
+        margin: 0;
+    }
+    .navbarResponsive {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .navbarResponsiveDetail {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+    .navbarResponsive a {
+        height: 100%;
+        font-size: 1.1em;
+        text-decoration: none;
+        color: black;
+    }
+    .sectionsResponsive {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1em 0em 1em 0em;
+    }
+    .sectionsResponsive:hover {
+        border-bottom: 4px solid #0065FC;
+        color: #0065FC;
+    }
+    /* RESPONSIVE HOSTING PRINCIPAL */
+    #hosting {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        width: 100%;
     }
     /* RESPONSIVE HEADER */
     .header {
@@ -590,7 +632,221 @@ footer {
         width: auto;
         padding: 0em;
     }
+    .containerHostingPrincipal h2 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .containerCardHostingPrincipal {
+        width: 100%;
+        order: 2;
+        background-color: white;
+    }
+    .cardsHostingPrincipal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+    }
+    .containerHostingPrincipal {
+        background-color: white;
+        /* margin: 1em 0em; */
+    }
+    /* RESPONSIVE HOSTING POPULAR   */
+    .containerPrincpal .containerHostingPopular {
+        width: 99%;
+        margin-left: -17px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 0;
+    }
+    .containerHostingPopular h2 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .containerCardHostingPopular {
+        width: 48%;
+        display: flex;
+        margin-top: 20px;
+        margin-right: 4px;
+        margin-left: 0px;
+    }
+    .titleHostingPrincipal, .titleHostingPopular {
+        margin: 0;
+        width: 100%;
+    }
+    .imgCardsHostingPopular {
+        width: auto;
+        height: auto;
+    }
+    .cardsHostingPopular img {
+        object-fit: cover;
+    }
+    .titleCardsHostingPrincipal {
+        margin: 10px 0px 5px 5px;
+    }
+    .presentationCardsHostingPopular {
+        width: 100%;
+    }
+    /* RESPONSIVE ACTIVITY */
+    .containeractivity {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1380px;
+        justify-content: space-between;
+    }
+    .containeractivity figcaption {
+        font-size: 0.9em;
+    }
+    .containeractivity .cardActivityTypeOne {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .containeractivity .cardActivityTypeTwo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .containeractivity .cardActivityTypeThree {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .containeractivity .cardActivityTypeOne a, .cardActivityTypeTwo a, .cardActivityTypeThree a {
+        width: 100%;
+        height: auto;
+    }
+    .cardActivityTypeOne img, .cardActivityTypeTwo img, .cardActivityTypeThree img {
+        height: 150px;
+        width: 100%;
+    }
+    /* RESPONSIVE FOOTER */
+    .footerBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        /* justify-content: start; */
+        /* font-size: 1.2em; */
+    }
+    .footerColumn {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+    }
+}
 
+/* ~~~~~~~~~~~~~~ RESPONSIVE FOR iPHONE 8 ~~~~~~~~~~~~~~ */
+
+@media all and (max-width: 767px) {
+    body .containerPrincpal, .header, .footerBox {
+        max-width: 768px;
+        margin: 0px 20px 0px 20px;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    /* RESPONSIVE HEADER */
+    .header {
+        padding: 20px 0px;
+    }
+    .sections {
+        display: none;
+    }
+    .inscription {
+        margin: 0;
+    }
+    .navbarResponsive {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .navbarResponsiveDetail {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+    .navbarResponsive a {
+        height: 100%;
+        font-size: 1.1em;
+        text-decoration: none;
+        color: black;
+    }
+    .sectionsResponsive {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1em 0em 1em 0em;
+    }
+    .sectionsResponsive:hover {
+        border-bottom: 4px solid #0065FC;
+        color: #0065FC;
+    }
+    /* RESPONSIVE SEARCH */
+    .searchButton {
+        display: none;
+    }
+    .searchButtonResponsive {
+        display: flex;
+        border: 0;
+        font-size: 1em;
+        border-radius: 20px 20px 20px 20px;
+        margin-left: -25px;
+        padding: 1.2em;
+        background-color: #0065FC;
+        color: white;
+        cursor: pointer;
+    }
+    /* RESPONSIVE SEARCH BUTTON */
+    .searchFiltersContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    .searchFilterTitle {
+        width: 100%;
+        margin-bottom: -15px;
+    }
+    .searchFilters {
+        margin: 8px 0px;
+        width: auto;
+    }
+    .searchFiltersTopics {
+        width: auto;
+        padding-right: 10px;
+    }
+    .informations {
+        width: 100%;
+        font-size: 15px;
+        
+    }
+    /* RESPONSIVE HOSTING PRINCIPAL */
+    #hosting {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+    .containerPrincpal .containerHostingPrincipal {
+        /* order: 1; */
+        width: auto;
+        padding: 0em;
+    }
     .containerHostingPrincipal h2 {
         margin-left: 0px;
         margin-bottom: 10px;
@@ -619,7 +875,6 @@ footer {
         display: flex;
         border-radius: 0;
     }
-
     .containerHostingPopular h2 {
         margin-left: 0px;
         margin-bottom: 10px;
@@ -634,23 +889,19 @@ footer {
     .titleHostingPrincipal, .titleHostingPopular {
         margin: 0;
     }
-
     .imgCardsHostingPopular {
         width: 100%;
         height: auto;
     }
     .cardsHostingPopular img {
-        object-fit:cover ;
+        object-fit: cover;
     }
     .titleCardsHostingPrincipal {
         margin: 10px 0px 5px 5px;
     }
-
     .presentationCardsHostingPopular {
         width: 100%;
     }
-
-
     /* RESPONSIVE ACTIVITY */
     .containeractivity {
         display: flex;
