@@ -633,14 +633,23 @@ footer {
     .titleHostingPrincipal, .titleHostingPopular {
         margin: 0;
     }
+
+    .imgCardsHostingPopular {
+        width: 100%;
+        height: auto;
+    }
     .cardsHostingPopular img {
-        height: 100%;
-        width: 33%;
-        /* object-fit: contain; */
+        object-fit:cover ;
     }
     .titleCardsHostingPrincipal {
         margin: 10px 0px 5px 5px;
     }
+
+    .presentationCardsHostingPopular {
+        width: 100%;
+    }
+
+
     /* RESPONSIVE ACTIVITY */
     .containeractivity {
         display: flex;
