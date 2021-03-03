@@ -21,10 +21,18 @@
         <nav class="navbar">
             <a href="#hosting" class="sections">Hébergements</a>
             <a href="#activity" class="sections">Activités</a>
-            <a href="mailto:inscription@reservia.com" class="sections">S'inscrire</a>
+            <a href="mailto:inscription@reservia.com" class="inscription">S'inscrire</a>
         </nav>
 
+
     </header>
+
+    <section class="navbarResponsive">
+        <nav class="navbarResponsiveDetail">
+            <a href="#hosting" class="sectionsResponsive">Hébergements</a>
+            <a href="#activity" class="sectionsResponsive">Activités</a>
+        </nav>
+    </section>
 
     <main class="containerPrincpal">
 
@@ -38,6 +46,9 @@
                 <span class="searchIcon"><i class="fas fa-map-marker-alt"></i></span>
                 <input class="searchText" type="text" placeholder="Marseille, France">
                 <button class="searchButton" type="button" value="Rechercher">Rechercher</button>
+                <button class="searchButtonResponsive" type="button" value="Rechercher"><i
+                        class="fas fa-search"></i></button>
+
             </form>
 
             <!-- SEARCH BUTTON -->
@@ -46,199 +57,203 @@
                 <div class="searchFilterTitle">
                     <p>Filtres</p>
                 </div>
-                <div class="searchFilters">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <div class="searchFiltersTopics">
-                        <p>Économique</p>
+
+               
+                    <div class="searchFilters">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <div class="searchFiltersTopics">
+                            <p>Économique</p>
+                        </div>
                     </div>
-                </div>
-                <div class="searchFilters">
-                    <i class="fas fa-child"></i>
-                    <div class="searchFiltersTopics">
-                        <p>Familiale</p>
+                    <div class="searchFilters">
+                        <i class="fas fa-child"></i>
+                        <div class="searchFiltersTopics">
+                            <p>Familial</p>
+                        </div>
                     </div>
-                </div>
-                <div class="searchFilters">
-                    <i class="fas fa-heart"></i>
-                    <div class="searchFiltersTopics">
-                        <p>Romantique</p>
+                    <div class="searchFilters">
+                        <i class="fas fa-heart"></i>
+                        <div class="searchFiltersTopics">
+                            <p>Romantique</p>
+                        </div>
                     </div>
-                </div>
-                <div class="searchFilters">
-                    <i class="fas fa-dog"></i>
-                    <div class="searchFiltersTopics">
-                        <p>Animaux autorisés</p>
+                    <div class="searchFilters">
+                        <i class="fas fa-dog"></i>
+                        <div class="searchFiltersTopics">
+                            <p>Animaux autorisés</p>
+                        </div>
                     </div>
-                </div>
+                
             </div>
 
-            <p class="informations"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
-            </p>
+
+            <span class="informations"><i class="fas fa-info"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </span>
 
         </section>
 
         <!-- HOSTING GENERAL -->
-        <section id="hosting">
-            <section class="containerHostingPrincipal">
-                <h2 class="titleHostingPrincipal">Hébergements à Marseille</h2>
-                <section class="containerCardHostingPrincipal">
-                    <div class="cardsHostingPrincipal">
-                        <img src="ressources/images/hosting/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+        <section id="hosting"">
+            <section class=" containerHostingPrincipal">
+            <h2 class="titleHostingPrincipal">Hébergements à Marseille</h2>
+            <section class="containerCardHostingPrincipal">
+                <div class="cardsHostingPrincipal">
+                    <img src="ressources/images/hosting/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
 
-                        <h3 class="titleCardsHostingPrincipal">Auberge de la Canebière</h3>
-                        <p class="priceCardsHostingPrincipal">Nuit à partir de <b>25€</b></p>
-                        <div class="notationCardsHostingPrincipal">
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsFalse"><i class="fas fa-star"></i></p>
-                        </div>
-
-                    </div>
-                    <div class="cardsHostingPrincipal">
-                        <img src="ressources/images/hosting/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                            alt="Hôtel du port">
-
-
-                        <h3 class="titleCardsHostingPrincipal">Hôtel du port</h3>
-                        <p class="priceCardsHostingPrincipal">Nuit à partir de <b>52€</b></p>
-                        <div class="notationCardsHostingPrincipal">
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                        </div>
-
-                    </div>
-                    <div class="cardsHostingPrincipal">
-                        <img src="ressources/images/hosting/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
-                        <h3 class="titleCardsHostingPrincipal">Hôtel de la mouette</h3>
-                        <p class="priceCardsHostingPrincipal">Nuit à partir de <b>46€</b></p>
-                        <div class="notationCardsHostingPrincipal">
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsFalse"><i class="fas fa-star"></i></p>
-                        </div>
-                    </div>
-                    <div class="cardsHostingPrincipal">
-                        <img src="ressources/images/hosting/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                            alt="Auberge de la mer">
-                        <h3 class="titleCardsHostingPrincipal">Hôtel de la mer</h3>
-                        <p class="priceCardsHostingPrincipal">Nuit à partir de <b>46€</b></p>
-                        <div class="notationCardsHostingPrincipal">
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsFalse"><i class="fas fa-star"></i></p>
-                            <p class="starsFalse"><i class="fas fa-star"></i></p>
-                        </div>
-                    </div>
-                    <div class="cardsHostingPrincipal">
-                        <img src="ressources/images/hosting/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                            alt="Auberge le panier">
-                        <h3 class="titleCardsHostingPrincipal">Auberge le panier</h3>
-                        <p class="priceCardsHostingPrincipal">Nuit à partir de <b>23€</b></p>
-                        <div class="notationCardsHostingPrincipal">
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsFalse"><i class="fas fa-star"></i></p>
-                        </div>
-                    </div>
-                    <div class="cardsHostingPrincipal">
-                        <img src="ressources/images/hosting/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                            alt="Hôtel chez Amina">
-                        <h3 class="titleCardsHostingPrincipal">Hôtel chez Amina</h3>
-                        <p class="priceCardsHostingPrincipal">Nuit à partir de <b>96€</b></p>
-                        <div class="notationCardsHostingPrincipal">
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                            <p class="starsTrue"><i class="fas fa-star"></i></p>
-                        </div>
+                    <h3 class="titleCardsHostingPrincipal">Auberge de la Canebière</h3>
+                    <p class="priceCardsHostingPrincipal">Nuit à partir de <b>25€</b></p>
+                    <div class="notationCardsHostingPrincipal">
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsFalse"><i class="fas fa-star"></i></p>
                     </div>
 
-
-                </section>
-                <h3 class="next"><a href="#">Afficher plus</a></h3>
-            </section>
-
-            <!-- HOSTING POPULAR -->
-            <section class="containderHostingPopular">
-                <div class="titleHostingPopular">
-                    <h2>Les populaires</h2><i class="fas fa-chart-line"></i>
                 </div>
+                <div class="cardsHostingPrincipal">
+                    <img src="ressources/images/hosting/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="Hôtel du port">
 
-                <div class="containerCardHostingPopular">
-                    <div class="cardsHostingPopular">
-                        <div class="imgCardsHostingPopular">
-                            <img src="ressources/images/hosting/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                alt="Hôtel le soleil du matin">
-                        </div>
-                        <div class="presentationCardsHostingPopular">
-                            <h3 class="titleCardsHostingPopular">Hôtel le soleil du matin</h3>
-                            <span class="priceCardsHostingPopular">Nuit à partir de <b>128€</b></span>
-                            <div class="notationCardsHostingPopular">
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                            </div>
-                        </div>
+
+                    <h3 class="titleCardsHostingPrincipal">Hôtel du port</h3>
+                    <p class="priceCardsHostingPrincipal">Nuit à partir de <b>52€</b></p>
+                    <div class="notationCardsHostingPrincipal">
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                    </div>
+
+                </div>
+                <div class="cardsHostingPrincipal">
+                    <img src="ressources/images/hosting/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                    <h3 class="titleCardsHostingPrincipal">Hôtel de la mouette</h3>
+                    <p class="priceCardsHostingPrincipal">Nuit à partir de <b>46€</b></p>
+                    <div class="notationCardsHostingPrincipal">
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsFalse"><i class="fas fa-star"></i></p>
                     </div>
                 </div>
-
-                <div class="containerCardHostingPopular">
-                    <div class="cardsHostingPopular">
-                        <div class="imgCardsHostingPopular">
-                            <img src="ressources/images/hosting/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                alt="Au coeur de l'eau">
-                        </div>
-                        <div class="presentationCardsHostingPopular">
-                            <h3 class="titleCardsHostingPopular">Au coeur de l'eau<br>Chambres d'hôtes</h3>
-                            <span class="priceCardsHostingPopular">Nuit à partir de <b>71€</b></span>
-                            <div class="notationCardsHostingPopular">
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                            </div>
-                        </div>
+                <div class="cardsHostingPrincipal">
+                    <img src="ressources/images/hosting/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="Auberge de la mer">
+                    <h3 class="titleCardsHostingPrincipal">Hôtel de la mer</h3>
+                    <p class="priceCardsHostingPrincipal">Nuit à partir de <b>46€</b></p>
+                    <div class="notationCardsHostingPrincipal">
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsFalse"><i class="fas fa-star"></i></p>
+                        <p class="starsFalse"><i class="fas fa-star"></i></p>
                     </div>
                 </div>
-
-
-                <div class="containerCardHostingPopular">
-                    <div class="cardsHostingPopular">
-                        <div class="imgCardsHostingPopular">
-                            <img src="ressources/images/hosting/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                alt="Hôtel Tout bleu et Blanc">
-                        </div>
-                        <div class="presentationCardsHostingPopular">
-                            <h3 class="titleCardsHostingPopular">Hôtel Tout bleu et Blanc</h3>
-                            <span class="priceCardsHostingPopular">Nuit à partir de <b>68€</b></span>
-                            <div class="notationCardsHostingPopular">
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                                <span class="starsTrue"><i class="fas fa-star"></i></span>
-                            </div>
-                        </div>
+                <div class="cardsHostingPrincipal">
+                    <img src="ressources/images/hosting/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="Auberge le panier">
+                    <h3 class="titleCardsHostingPrincipal">Auberge le panier</h3>
+                    <p class="priceCardsHostingPrincipal">Nuit à partir de <b>23€</b></p>
+                    <div class="notationCardsHostingPrincipal">
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsFalse"><i class="fas fa-star"></i></p>
                     </div>
                 </div>
-
+                <div class="cardsHostingPrincipal">
+                    <img src="ressources/images/hosting/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="Hôtel chez Amina">
+                    <h3 class="titleCardsHostingPrincipal">Hôtel chez Amina</h3>
+                    <p class="priceCardsHostingPrincipal">Nuit à partir de <b>96€</b></p>
+                    <div class="notationCardsHostingPrincipal">
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                        <p class="starsTrue"><i class="fas fa-star"></i></p>
+                    </div>
+                </div>
 
 
             </section>
+            <h3 class="next"><a href="#">Afficher plus</a></h3>
+        </section>
+
+        <!-- HOSTING POPULAR -->
+        <section class="containerHostingPopular">
+            <div class="titleHostingPopular">
+                <h2>Les populaires</h2><i class="fas fa-chart-line"></i>
+            </div>
+
+            <div class="containerCardHostingPopular">
+                <div class="cardsHostingPopular">
+                    <div class="imgCardsHostingPopular">
+                        <img src="ressources/images/hosting/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                            alt="Hôtel le soleil du matin">
+                    </div>
+                    <div class="presentationCardsHostingPopular">
+                        <h3 class="titleCardsHostingPopular">Hôtel le soleil du matin</h3>
+                        <span class="priceCardsHostingPopular">Nuit à partir de <b>128€</b></span>
+                        <div class="notationCardsHostingPopular">
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containerCardHostingPopular">
+                <div class="cardsHostingPopular">
+                    <div class="imgCardsHostingPopular">
+                        <img src="ressources/images/hosting/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                            alt="Au coeur de l'eau">
+                    </div>
+                    <div class="presentationCardsHostingPopular">
+                        <h3 class="titleCardsHostingPopular">Au coeur de l'eau<br>Chambres d'hôtes</h3>
+                        <span class="priceCardsHostingPopular">Nuit à partir de <b>71€</b></span>
+                        <div class="notationCardsHostingPopular">
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="containerCardHostingPopular">
+                <div class="cardsHostingPopular">
+                    <div class="imgCardsHostingPopular">
+                        <img src="ressources/images/hosting/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                            alt="Hôtel Tout bleu et Blanc">
+                    </div>
+                    <div class="presentationCardsHostingPopular">
+                        <h3 class="titleCardsHostingPopular">Hôtel Tout bleu et Blanc</h3>
+                        <span class="priceCardsHostingPopular">Nuit à partir de <b>68€</b></span>
+                        <div class="notationCardsHostingPopular">
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                            <span class="starsTrue"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
         </section>
 
         <!-- ACTVITY -->
