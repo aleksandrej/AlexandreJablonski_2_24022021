@@ -577,19 +577,6 @@ footer {
         width: 100%;
         font-size: 15px;
     }
-    .informations i {
-        padding: 5px 10px;
-        margin-top: 15px;
-    }
-    /* RESPONSIVE CONTAINER HOSTING */
-    .containerHostingPrincipal h2, .containerHostingPopular h2 {
-        padding: 0px;
-    }
-
-    .containerHostingPrincipal h2, .containerHostingPopular h2 {
-        margin-left: 0px;
-        margin-bottom: 10px;
-    }
     /* RESPONSIVE HOSTING PRINCIPAL */
     #hosting {
         display: flex;
@@ -601,6 +588,12 @@ footer {
         /* order: 1; */
         width: auto;
         padding: 0em;
+    }
+
+    .containerHostingPrincipal h2 {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-top: 40px;
     }
     .containerCardHostingPrincipal {
         width: 100%;
@@ -620,15 +613,27 @@ footer {
     }
     /* RESPONSIVE HOSTING POPULAR   */
     .containerPrincpal .containerHostingPopular {
-        width: auto;
+        width: 99%;
+        margin-left: -17px;
         display: flex;
+        border-radius: 0;
+    }
+
+    .containerHostingPopular h2 {
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
     .containerCardHostingPopular {
-        width: 100%;
+        width: 98%;
         display: flex;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .titleHostingPrincipal, .titleHostingPopular {
         margin: 0;
     }
-    .cardsHostingPopular img, {
+    .cardsHostingPopular img {
         height: 100%;
         width: 33%;
         /* object-fit: contain; */
