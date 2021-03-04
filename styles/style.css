@@ -30,7 +30,6 @@ h3 {
 .containerPrincpal {
     margin: auto;
     height: auto;
-    /* padding: 0px 30px 0px 30px; */
 }
 
 /* HEADER */
@@ -175,12 +174,10 @@ header a:hover {
     background-color: white;
     color: #0065FC;
     padding: 10px 15px;
-    /* align-items: center; */
     border: 2px solid#ddd;
     border-radius: 50%;
     margin-top: 5px;
     margin-right: 0.8em;
-    /* margin-left: 0.8em; */
     height: 50%;
 }
 
@@ -324,7 +321,6 @@ header a:hover {
     margin-left: auto;
     margin-top: 0.5em;
     font-size: 1.4em;
-    /* align-items: center; */
 }
 
 .containerCardHostingPopular {
@@ -538,7 +534,6 @@ footer {
     #hosting {
         display: flex;
         flex-direction: row;
-        /* justify-content: center; */
         width: 100%;
     }
     /* RESPONSIVE HEADER */
@@ -579,7 +574,6 @@ footer {
         color: #0065FC;
     }
     /* RESPONSIVE SEARCH */
-
     .searchTitle h1 {
         font-size: 1.5em;
     }
@@ -603,7 +597,6 @@ footer {
         height: auto;
         display: flex;
         flex-direction: row;
-        /* flex-wrap: wrap; */
         justify-content: space-between;
         padding: 0;
         margin: 0;
@@ -632,7 +625,6 @@ footer {
         width: 100%;
     }
     .containerPrincpal .containerHostingPrincipal {
-        /* order: 1; */
         width: auto;
         padding: 0em;
     }
@@ -643,7 +635,6 @@ footer {
     }
     .containerCardHostingPrincipal {
         width: 100%;
-        /* order: 2; */
         justify-content: space-around;
         background-color: white;
     }
@@ -656,7 +647,6 @@ footer {
     }
     .containerHostingPrincipal {
         background-color: white;
-        /* margin: 1em 0em; */
     }
     /* RESPONSIVE HOSTING POPULAR   */
     .containerPrincpal .containerHostingPopular {
@@ -740,8 +730,6 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        /* justify-content: start; */
-        /* font-size: 1.2em; */
     }
     .footerColumn {
         width: 100%;
@@ -818,7 +806,6 @@ footer {
         height: auto;
         display: flex;
         flex-direction: row;
-        /* flex-wrap: wrap; */
         justify-content: space-between;
         padding: 0;
         margin: 0;
@@ -838,7 +825,6 @@ footer {
     .informations {
         width: 100%;
         font-size: 15px;
-        
     }
     /* RESPONSIVE HOSTING PRINCIPAL */
     #hosting {
@@ -848,7 +834,6 @@ footer {
         width: 100%;
     }
     .containerPrincpal .containerHostingPrincipal {
-        /* order: 1; */
         width: auto;
         padding: 0em;
     }
@@ -871,7 +856,6 @@ footer {
     }
     .containerHostingPrincipal {
         background-color: white;
-        /* margin: 1em 0em; */
     }
     /* RESPONSIVE HOSTING POPULAR   */
     .containerPrincpal .containerHostingPopular {
@@ -951,8 +935,6 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        /* justify-content: start; */
-        /* font-size: 1.2em; */
     }
     .footerColumn {
         width: 100%;
