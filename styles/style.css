@@ -486,7 +486,7 @@ footer {
     color: #0065FC;
 }
 
-/* ~~~~~~~~~~~~~~ RESPONSIVE FOR Tab ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~ RESPONSIVE FOR Tabs ~~~~~~~~~~~~~~ */
 
 @media all and (min-width:768px) and (max-width:1024px) {
     body .containerPrincpal, .header, .footerBox {
